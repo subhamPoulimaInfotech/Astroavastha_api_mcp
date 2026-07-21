@@ -1,0 +1,580 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.endpoints = void 0;
+const schemas_1 = require("./schemas");
+exports.endpoints = [
+    {
+        name: "get_divisional_chart_d1",
+        method: "POST",
+        path: "/divitionalcharts/d1",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d1chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d2",
+        method: "POST",
+        path: "/divitionalcharts/d2",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d2chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d3",
+        method: "POST",
+        path: "/divitionalcharts/d3",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d3chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d4",
+        method: "POST",
+        path: "/divitionalcharts/d4",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d4chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d5",
+        method: "POST",
+        path: "/divitionalcharts/d5",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d5chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d6",
+        method: "POST",
+        path: "/divitionalcharts/d6",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d6chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d7",
+        method: "POST",
+        path: "/divitionalcharts/d7",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d7chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d8",
+        method: "POST",
+        path: "/divitionalcharts/d8",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d8chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d9",
+        method: "POST",
+        path: "/divitionalcharts/d9",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d9chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d10",
+        method: "POST",
+        path: "/divitionalcharts/d10",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d10chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d11",
+        method: "POST",
+        path: "/divitionalcharts/d11",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d11chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d12",
+        method: "POST",
+        path: "/divitionalcharts/d12",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d12chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d16",
+        method: "POST",
+        path: "/divitionalcharts/d16",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d16chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d20",
+        method: "POST",
+        path: "/divitionalcharts/d20",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d20chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d24",
+        method: "POST",
+        path: "/divitionalcharts/d24",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d24chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d27",
+        method: "POST",
+        path: "/divitionalcharts/d27",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d27chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d30",
+        method: "POST",
+        path: "/divitionalcharts/d30",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d30chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d40",
+        method: "POST",
+        path: "/divitionalcharts/d40",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d40chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d45",
+        method: "POST",
+        path: "/divitionalcharts/d45",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d45chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d60",
+        method: "POST",
+        path: "/divitionalcharts/d60",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d60chart AstroChalit API"
+    },
+    {
+        name: "get_divisional_chart_d601",
+        method: "POST",
+        path: "/divitionalcharts/d601",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute d601chart AstroChalit API"
+    },
+    {
+        name: "get_biorhythm",
+        method: "POST",
+        path: "/biorhythm",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute biorhythm AstroChalit API"
+    },
+    {
+        name: "get_panchang",
+        method: "POST",
+        path: "/panchang",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute panchang AstroChalit API"
+    },
+    {
+        name: "get_kp_planets",
+        method: "POST",
+        path: "/kp_planets",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute kp_planets AstroChalit API"
+    },
+    {
+        name: "get_kp_birth",
+        method: "POST",
+        path: "/kp_birth",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute kp_birth AstroChalit API"
+    },
+    {
+        name: "get_kp_significators",
+        method: "POST",
+        path: "/kp_significators",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute kp_significators AstroChalit API"
+    },
+    {
+        name: "get_kp_planet_significators",
+        method: "POST",
+        path: "/kp_planet_significators",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute kp_planet_significators AstroChalit API"
+    },
+    {
+        name: "get_kp_house_significators",
+        method: "POST",
+        path: "/kp_house_significators",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute kp_house_significators AstroChalit API"
+    },
+    {
+        name: "get_kp_house_cups",
+        method: "POST",
+        path: "/kp_house_cups",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute kp_house_cups AstroChalit API"
+    },
+    {
+        name: "get_jamini",
+        method: "POST",
+        path: "/jamini",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute jamini AstroChalit API"
+    },
+    {
+        name: "get_char_maha_dasha",
+        method: "POST",
+        path: "/char_maha_dasha",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute char_maha_dasha AstroChalit API"
+    },
+    {
+        name: "get_char_antar_dasha",
+        method: "POST",
+        path: "/char_antar_dasha",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute char_antar_dasha AstroChalit API"
+    },
+    {
+        name: "get_char_pratyantar_dasha",
+        method: "POST",
+        path: "/char_pratyantar_dasha",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute char_pratyantar_dasha AstroChalit API"
+    },
+    {
+        name: "get_bhinnaashtakvarga",
+        method: "POST",
+        path: "/bhinna_ashtakvarga",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute bhinnaAshtakVarga AstroChalit API"
+    },
+    {
+        name: "get_sarvashtakvarga",
+        method: "POST",
+        path: "/sarvashtakvarga",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute sarvashtakvarga AstroChalit API"
+    },
+    {
+        name: "get_dashakoot",
+        method: "POST",
+        path: "/dashakoot",
+        schema: schemas_1.matchmakingSchema,
+        description: "Execute dashaKoot AstroChalit API"
+    },
+    {
+        name: "get_ashtakoot",
+        method: "POST",
+        path: "/ashtakoot",
+        schema: schemas_1.matchmakingSchema,
+        description: "Execute ashtaKoot AstroChalit API"
+    },
+    {
+        name: "get_manglik_report",
+        method: "POST",
+        path: "/manglik_report",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute manglik_report AstroChalit API"
+    },
+    {
+        name: "get_match_birthchart",
+        method: "POST",
+        path: "/match_birth_chart",
+        schema: schemas_1.matchmakingSchema,
+        description: "Execute match_birthChart AstroChalit API"
+    },
+    {
+        name: "get_numerologyreport",
+        method: "POST",
+        path: "/numerology_report",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute numerologyReport AstroChalit API"
+    },
+    {
+        name: "get_radical_prediction",
+        method: "POST",
+        path: "/radical_prediction",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute radical_prediction AstroChalit API"
+    },
+    {
+        name: "get_lifepath_prediction",
+        method: "POST",
+        path: "/lifepath_prediction",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute lifepath_prediction AstroChalit API"
+    },
+    {
+        name: "get_numerology_prediction",
+        method: "POST",
+        path: "/numerology_prediction",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute numerology_prediction AstroChalit API"
+    },
+    {
+        name: "get_numerologynumbers",
+        method: "POST",
+        path: "/numerology_numbers",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute numerologyNumbers AstroChalit API"
+    },
+    {
+        name: "get_yogini_sub",
+        method: "POST",
+        path: "/yogini_sub",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute yogini_sub AstroChalit API"
+    },
+    {
+        name: "get_yogini_maha",
+        method: "POST",
+        path: "/yogini_maha",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute yogini_maha AstroChalit API"
+    },
+    {
+        name: "get_lalkitab_debts",
+        method: "POST",
+        path: "/lalkitab_debts",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute lalkitab_debts AstroChalit API"
+    },
+    {
+        name: "get_lalkitab_chart",
+        method: "POST",
+        path: "/lalkitab_chart",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute lalkitab_chart AstroChalit API"
+    },
+    {
+        name: "get_lalkitab_predictions",
+        method: "POST",
+        path: "/lalkitab_predictions",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute lalkitab_predictions AstroChalit API"
+    },
+    {
+        name: "get_vimshottari_maha",
+        method: "POST",
+        path: "/vimshottari_maha",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute vimshottari_maha AstroChalit API"
+    },
+    {
+        name: "get_vimshottari_pratyantar",
+        method: "POST",
+        path: "/vimshottari_pratyantar",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute vimshottari_pratyantar AstroChalit API"
+    },
+    {
+        name: "get_vimshottari_sookshma",
+        method: "POST",
+        path: "/vimshottari_sookshma",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute vimshottari_sookshma AstroChalit API"
+    },
+    {
+        name: "get_vimshottari_prana",
+        method: "POST",
+        path: "/vimshottari_prana",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute vimshottari_prana AstroChalit API"
+    },
+    {
+        name: "get_vimshottari_antar",
+        method: "POST",
+        path: "/vimshottari_antar",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute vimshottari_antar AstroChalit API"
+    },
+    {
+        name: "get_sadesati_dosha",
+        method: "POST",
+        path: "/sadesati_dosha",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute sadeSati_dosha AstroChalit API"
+    },
+    {
+        name: "get_kaalsarp_dosha",
+        method: "POST",
+        path: "/kaalsarp_dosha",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute kaalSarp_dosha AstroChalit API"
+    },
+    {
+        name: "get_pitru_dosha",
+        method: "POST",
+        path: "/pitru_dosha",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute pitru_dosha AstroChalit API"
+    },
+    {
+        name: "get_manglik_dosha_report",
+        method: "POST",
+        path: "/manglik_dosha_report",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute manglik_dosha_report AstroChalit API"
+    },
+    {
+        name: "get_varshphal_details",
+        method: "POST",
+        path: "/varshphal_details",
+        schema: schemas_1.varshphalDetailsSchema,
+        description: "Execute varshphal_details AstroChalit API"
+    },
+    {
+        name: "get_varshphal_year_chart",
+        method: "POST",
+        path: "/varshphal_year_chart",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute varshphal_year_chart AstroChalit API"
+    },
+    {
+        name: "get_varshphal_month_chart",
+        method: "POST",
+        path: "/varshphal_month_chart",
+        schema: schemas_1.varshphalMonthSchema,
+        description: "Execute varshphal_month_chart AstroChalit API"
+    },
+    {
+        name: "get_varshphal_mudda_antar",
+        method: "POST",
+        path: "/varshphal_mudda_antar",
+        schema: schemas_1.varshphalMuddaAntarSchema,
+        description: "Execute varshphal_mudda_antar AstroChalit API"
+    },
+    {
+        name: "get_varshphal_mudda",
+        method: "POST",
+        path: "/varshphal_mudda",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute varshphal_mudda AstroChalit API"
+    },
+    {
+        name: "get_varshphal_saham",
+        method: "POST",
+        path: "/varshphal_saham",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute varshphal_saham AstroChalit API"
+    },
+    {
+        name: "get_varshphal_harsha_bala",
+        method: "POST",
+        path: "/varshphal_harsha_bala",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute varshphal_harsha_bala AstroChalit API"
+    },
+    {
+        name: "get_get_hora_muhurta",
+        method: "POST",
+        path: "/hora_muhurta",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute get_hora_muhurta AstroChalit API"
+    },
+    {
+        name: "get_get_chaugadiya_muhurta",
+        method: "POST",
+        path: "/chaugadiya_muhurta",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute get_chaugadiya_muhurta AstroChalit API"
+    },
+    {
+        name: "get_get_bala_details",
+        method: "POST",
+        path: "/get_bala_details/:bala",
+        schema: schemas_1.balaSchema,
+        description: "Execute get_bala_details AstroChalit API"
+    },
+    {
+        name: "get_compatibility_check",
+        method: "GET",
+        path: "/compatibility_check",
+        schema: schemas_1.emptySchema,
+        description: "Execute compatibility_check AstroChalit API"
+    },
+    {
+        name: "get_calculate_ephemeris",
+        method: "POST",
+        path: "/calculate_ephemeris",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute calculate_ephemeris AstroChalit API"
+    },
+    {
+        name: "get_calculate_planet_ingress",
+        method: "POST",
+        path: "/calculate_planet_ingress",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute calculate_planet_ingress AstroChalit API"
+    },
+    {
+        name: "get_planet_ingress",
+        method: "POST",
+        path: "/planet_ingress",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute planet_ingress AstroChalit API"
+    },
+    {
+        name: "get_planet_aspects",
+        method: "POST",
+        path: "/planet_aspects",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute planet_aspects AstroChalit API"
+    },
+    {
+        name: "get_moon_phases",
+        method: "POST",
+        path: "/moon_phases",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute moon_phases AstroChalit API"
+    },
+    {
+        name: "get_hindu_festivals",
+        method: "POST",
+        path: "/hindu_festivals",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute hindu_festivals AstroChalit API"
+    },
+    {
+        name: "get_planetary_position",
+        method: "POST",
+        path: "/planetary_position",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute planetary_position AstroChalit API"
+    },
+    {
+        name: "get_horoscope",
+        method: "GET",
+        path: "/horoscope/:signName",
+        schema: schemas_1.horoscopeSchema,
+        description: "Execute horoscope AstroChalit API"
+    },
+    {
+        name: "get_rudraksha_suggestion",
+        method: "POST",
+        path: "/rudraksha_suggestion",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute rudraksha_suggestion AstroChalit API"
+    },
+    {
+        name: "get_gemstone_suggestion",
+        method: "POST",
+        path: "/gemstone_suggestion",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute gemstone_suggestion AstroChalit API"
+    },
+    {
+        name: "get_sun_chart",
+        method: "POST",
+        path: "/sun_chart",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute sun_chart AstroChalit API"
+    },
+    {
+        name: "get_moon_chart",
+        method: "POST",
+        path: "/moon_chart",
+        schema: schemas_1.birthDetailsSchema,
+        description: "Execute moon_chart AstroChalit API"
+    },
+    {
+        name: "get_searchplaceswithname",
+        method: "GET",
+        path: "/search_place",
+        schema: schemas_1.searchPlaceSchema,
+        description: "Execute searchPlacesWithName AstroChalit API"
+    }
+];
