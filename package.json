@@ -8,13 +8,21 @@
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
-    "prepare": "npm run build",
-    "preinstall": "node indexe.cjs"
+    "prepare": "npm run build"
   },
-  "keywords": [],
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "astrology",
+    "vedic-astrology",
+    "astrochalit"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Model Context Protocol (MCP) server for AstroChalit / Vedic Astrology API",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.6.0",
     "axios": "^1.8.1",
