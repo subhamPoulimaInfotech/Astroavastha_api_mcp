@@ -60,7 +60,6 @@ const server = new mcp_js_1.McpServer({
     version: "1.0.0",
 });
 endpoints_1.endpoints.forEach((endpoint) => {
-    // @ts-ignore
     server.tool(endpoint.name, endpoint.description, endpoint.schema, async (args) => {
         try {
             if (IS_DEBUG) {

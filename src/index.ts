@@ -60,8 +60,7 @@ const server = new McpServer({
 });
 
 endpoints.forEach((endpoint) => {
-  // @ts-ignore
-  server.tool(
+  (server as any).tool(
     endpoint.name,
     endpoint.description,
     endpoint.schema,

@@ -154,14 +154,14 @@ exports.endpoints = [
         name: "get_biorhythm",
         method: "POST",
         path: "/biorhythm",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.biorhythmSchema,
         description: "Execute biorhythm AstroChalit API"
     },
     {
         name: "get_panchang",
         method: "POST",
         path: "/panchang",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.panchangSchema,
         description: "Execute panchang AstroChalit API"
     },
     {
@@ -224,21 +224,21 @@ exports.endpoints = [
         name: "get_char_antar_dasha",
         method: "POST",
         path: "/char_antar_dasha",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.charAntarDashaSchema,
         description: "Execute char_antar_dasha AstroChalit API"
     },
     {
         name: "get_char_pratyantar_dasha",
         method: "POST",
         path: "/char_pratyantar_dasha",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.charPratyantarDashaSchema,
         description: "Execute char_pratyantar_dasha AstroChalit API"
     },
     {
         name: "get_bhinnaashtakvarga",
         method: "POST",
         path: "/bhinna_ashtakvarga",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.bhinnaAshtakvargaSchema,
         description: "Execute bhinnaAshtakVarga AstroChalit API"
     },
     {
@@ -266,7 +266,7 @@ exports.endpoints = [
         name: "get_manglik_report",
         method: "POST",
         path: "/manglik_report",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.matchmakingSchema,
         description: "Execute manglik_report AstroChalit API"
     },
     {
@@ -280,35 +280,35 @@ exports.endpoints = [
         name: "get_numerologyreport",
         method: "POST",
         path: "/numerology_report",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.numerologySchema,
         description: "Execute numerologyReport AstroChalit API"
     },
     {
         name: "get_radical_prediction",
         method: "POST",
         path: "/radical_prediction",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.numerologySchema,
         description: "Execute radical_prediction AstroChalit API"
     },
     {
         name: "get_lifepath_prediction",
         method: "POST",
         path: "/lifepath_prediction",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.numerologySchema,
         description: "Execute lifepath_prediction AstroChalit API"
     },
     {
         name: "get_numerology_prediction",
         method: "POST",
         path: "/numerology_prediction",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.numerologySchema,
         description: "Execute numerology_prediction AstroChalit API"
     },
     {
         name: "get_numerologynumbers",
         method: "POST",
         path: "/numerology_numbers",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.numerologySchema,
         description: "Execute numerologyNumbers AstroChalit API"
     },
     {
@@ -357,28 +357,28 @@ exports.endpoints = [
         name: "get_vimshottari_pratyantar",
         method: "POST",
         path: "/vimshottari_pratyantar",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.vimshottariPratyantarSchema,
         description: "Execute vimshottari_pratyantar AstroChalit API"
     },
     {
         name: "get_vimshottari_sookshma",
         method: "POST",
         path: "/vimshottari_sookshma",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.vimshottariSookshmaSchema,
         description: "Execute vimshottari_sookshma AstroChalit API"
     },
     {
         name: "get_vimshottari_prana",
         method: "POST",
         path: "/vimshottari_prana",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.vimshottariPranaSchema,
         description: "Execute vimshottari_prana AstroChalit API"
     },
     {
         name: "get_vimshottari_antar",
         method: "POST",
         path: "/vimshottari_antar",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.vimshottariAntarSchema,
         description: "Execute vimshottari_antar AstroChalit API"
     },
     {
@@ -462,14 +462,14 @@ exports.endpoints = [
         name: "get_get_hora_muhurta",
         method: "POST",
         path: "/hora_muhurta",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.muhurtaSchema,
         description: "Execute get_hora_muhurta AstroChalit API"
     },
     {
         name: "get_get_chaugadiya_muhurta",
         method: "POST",
         path: "/chaugadiya_muhurta",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.muhurtaSchema,
         description: "Execute get_chaugadiya_muhurta AstroChalit API"
     },
     {
@@ -483,14 +483,14 @@ exports.endpoints = [
         name: "get_compatibility_check",
         method: "GET",
         path: "/compatibility_check",
-        schema: schemas_1.emptySchema,
+        schema: schemas_1.compatibilitySchema,
         description: "Execute compatibility_check AstroChalit API"
     },
     {
         name: "get_calculate_ephemeris",
         method: "POST",
         path: "/calculate_ephemeris",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.calculateEphemerisSchema,
         description: "Execute calculate_ephemeris AstroChalit API"
     },
     {
@@ -532,7 +532,7 @@ exports.endpoints = [
         name: "get_planetary_position",
         method: "POST",
         path: "/planetary_position",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.planetaryPositionSchema,
         description: "Execute planetary_position AstroChalit API"
     },
     {
