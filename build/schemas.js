@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.searchPlaceSchema = exports.varshphalMuddaAntarSchema = exports.varshphalMonthSchema = exports.varshphalDetailsSchema = exports.balaSchema = exports.horoscopeSchema = exports.matchmakingSchema = exports.birthDetailsSchema = exports.emptySchema = void 0;
+exports.hinduFestivalsSchema = exports.moonPhasesSchema = exports.planetAspectsSchema = exports.planetIngressSchema = exports.searchPlaceSchema = exports.varshphalMuddaAntarSchema = exports.varshphalMonthSchema = exports.varshphalDetailsSchema = exports.balaSchema = exports.horoscopeSchema = exports.matchmakingSchema = exports.birthDetailsSchema = exports.emptySchema = void 0;
 const zod_1 = require("zod");
 exports.emptySchema = {};
 exports.birthDetailsSchema = {
@@ -56,4 +56,25 @@ exports.varshphalMuddaAntarSchema = {
 };
 exports.searchPlaceSchema = {
     placeName: zod_1.z.string().describe("Name of the place to search"),
+};
+exports.planetIngressSchema = {
+    month: zod_1.z.number().int().min(1).max(12).describe("Month (1-12)"),
+    year: zod_1.z.number().int().describe("Year (2024 to 2040 available)"),
+    planet: zod_1.z.enum([
+        "All", "Sun", "Moon", "Mercury", "Venus", "Mars",
+        "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"
+    ]).default("All").describe("Planet name or 'All' to get all planetary ingresses (Default: 'All')"),
+    zodiacSystem: zod_1.z.enum(["Vedic", "Western"]).default("Vedic").describe("Zodiac system: 'Vedic' (Sidereal) or 'Western' (Tropical). Default: 'Vedic'"),
+};
+exports.planetAspectsSchema = {
+    month: zod_1.z.number().int().min(1).max(12).describe("Month (1-12)"),
+    year: zod_1.z.number().int().describe("Year (e.g. 2024 to 2040)"),
+};
+exports.moonPhasesSchema = {
+    selectedDate: zod_1.z.string().describe("Selected date in YYYY-MM-DD format (e.g. 2024-05-15)"),
+};
+exports.hinduFestivalsSchema = {
+    year: zod_1.z.number().int().describe("Year (e.g. 2024 to 2040)"),
+    month: zod_1.z.number().int().min(1).max(12).describe("Month (1-12)"),
+    language: zod_1.z.enum(["en", "hi"]).default("en").describe("Language: 'en' for English or 'hi' for Hindi. Default: 'en'"),
 };

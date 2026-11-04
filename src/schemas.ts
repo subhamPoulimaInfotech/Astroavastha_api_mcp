@@ -63,3 +63,28 @@ export const varshphalMuddaAntarSchema = {
 export const searchPlaceSchema = {
   placeName: z.string().describe("Name of the place to search"),
 };
+
+export const planetIngressSchema = {
+  month: z.number().int().min(1).max(12).describe("Month (1-12)"),
+  year: z.number().int().describe("Year (2024 to 2040 available)"),
+  planet: z.enum([
+    "All", "Sun", "Moon", "Mercury", "Venus", "Mars", 
+    "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"
+  ]).default("All").describe("Planet name or 'All' to get all planetary ingresses (Default: 'All')"),
+  zodiacSystem: z.enum(["Vedic", "Western"]).default("Vedic").describe("Zodiac system: 'Vedic' (Sidereal) or 'Western' (Tropical). Default: 'Vedic'"),
+};
+
+export const planetAspectsSchema = {
+  month: z.number().int().min(1).max(12).describe("Month (1-12)"),
+  year: z.number().int().describe("Year (e.g. 2024 to 2040)"),
+};
+
+export const moonPhasesSchema = {
+  selectedDate: z.string().describe("Selected date in YYYY-MM-DD format (e.g. 2024-05-15)"),
+};
+
+export const hinduFestivalsSchema = {
+  year: z.number().int().describe("Year (e.g. 2024 to 2040)"),
+  month: z.number().int().min(1).max(12).describe("Month (1-12)"),
+  language: z.enum(["en", "hi"]).default("en").describe("Language: 'en' for English or 'hi' for Hindi. Default: 'en'"),
+};

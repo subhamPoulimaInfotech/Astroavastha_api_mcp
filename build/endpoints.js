@@ -504,29 +504,29 @@ exports.endpoints = [
         name: "get_planet_ingress",
         method: "POST",
         path: "/planet_ingress",
-        schema: schemas_1.birthDetailsSchema,
-        description: "Execute planet_ingress AstroChalit API"
+        schema: schemas_1.planetIngressSchema,
+        description: "Execute planet_ingress AstroChalit API to get transit/ingress of planets into zodiac signs"
     },
     {
         name: "get_planet_aspects",
         method: "POST",
         path: "/planet_aspects",
-        schema: schemas_1.birthDetailsSchema,
-        description: "Execute planet_aspects AstroChalit API"
+        schema: schemas_1.planetAspectsSchema,
+        description: "Execute planet_aspects AstroChalit API to get planetary aspects for a month/year"
     },
     {
         name: "get_moon_phases",
         method: "POST",
         path: "/moon_phases",
-        schema: schemas_1.birthDetailsSchema,
-        description: "Execute moon_phases AstroChalit API"
+        schema: schemas_1.moonPhasesSchema,
+        description: "Execute moon_phases AstroChalit API to get moon phases for a selected date/month"
     },
     {
         name: "get_hindu_festivals",
         method: "POST",
         path: "/hindu_festivals",
-        schema: schemas_1.birthDetailsSchema,
-        description: "Execute hindu_festivals AstroChalit API"
+        schema: schemas_1.hinduFestivalsSchema,
+        description: "Execute hindu_festivals AstroChalit API to get festivals for a given month and year"
     },
     {
         name: "get_planetary_position",

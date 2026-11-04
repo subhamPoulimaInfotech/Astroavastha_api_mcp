@@ -7,6 +7,10 @@ import {
   varshphalMonthSchema, 
   varshphalMuddaAntarSchema,
   searchPlaceSchema,
+  planetIngressSchema,
+  planetAspectsSchema,
+  moonPhasesSchema,
+  hinduFestivalsSchema,
   emptySchema
 } from './schemas';
 
@@ -512,29 +516,29 @@ export const endpoints = [
     name: "get_planet_ingress",
     method: "POST",
     path: "/planet_ingress",
-    schema: birthDetailsSchema,
-    description: "Execute planet_ingress AstroChalit API"
+    schema: planetIngressSchema,
+    description: "Execute planet_ingress AstroChalit API to get transit/ingress of planets into zodiac signs"
   },
   {
     name: "get_planet_aspects",
     method: "POST",
     path: "/planet_aspects",
-    schema: birthDetailsSchema,
-    description: "Execute planet_aspects AstroChalit API"
+    schema: planetAspectsSchema,
+    description: "Execute planet_aspects AstroChalit API to get planetary aspects for a month/year"
   },
   {
     name: "get_moon_phases",
     method: "POST",
     path: "/moon_phases",
-    schema: birthDetailsSchema,
-    description: "Execute moon_phases AstroChalit API"
+    schema: moonPhasesSchema,
+    description: "Execute moon_phases AstroChalit API to get moon phases for a selected date/month"
   },
   {
     name: "get_hindu_festivals",
     method: "POST",
     path: "/hindu_festivals",
-    schema: birthDetailsSchema,
-    description: "Execute hindu_festivals AstroChalit API"
+    schema: hinduFestivalsSchema,
+    description: "Execute hindu_festivals AstroChalit API to get festivals for a given month and year"
   },
   {
     name: "get_planetary_position",
