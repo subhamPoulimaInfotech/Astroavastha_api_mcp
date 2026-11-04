@@ -1,6 +1,6 @@
 {
   "name": "astrochalit-mcp-server",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "build/index.js",
   "bin": {
     "astrochalit-mcp": "build/index.js"

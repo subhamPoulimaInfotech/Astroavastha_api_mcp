@@ -98,13 +98,13 @@ exports.muhurtaSchema = {
 };
 exports.compatibilitySchema = {
     maleSign: zod_1.z.enum([
-        "aries", "taurus", "gemini", "cancer", "leo", "virgo",
-        "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"
-    ]).describe("Zodiac sign of the male in lowercase"),
+        "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+        "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
+    ]).describe("Zodiac sign of the male (e.g. Aries, Leo)"),
     femaleSign: zod_1.z.enum([
-        "aries", "taurus", "gemini", "cancer", "leo", "virgo",
-        "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"
-    ]).describe("Zodiac sign of the female in lowercase"),
+        "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+        "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
+    ]).describe("Zodiac sign of the female (e.g. Aries, Leo)"),
 };
 exports.bhinnaAshtakvargaSchema = {
     ...exports.birthDetailsSchema,
