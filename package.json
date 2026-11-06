@@ -1,6 +1,6 @@
 {
-  "name": "astrochalit-mcp-server",
-  "version": "1.0.5",
+  "name": "astrochalit-mcp",
+  "version": "1.0.0",
   "main": "build/index.js",
   "bin": {
     "astrochalit-mcp": "build/index.js"
@@ -23,6 +23,7 @@
   "author": "",
   "license": "ISC",
   "description": "Model Context Protocol (MCP) server for AstroChalit / Vedic Astrology API",
+  "homepage": "https://www.npmjs.com/package/astrochalit-mcp",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.6.0",
     "axios": "^1.8.1",
