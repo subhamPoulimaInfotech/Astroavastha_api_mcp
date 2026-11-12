@@ -420,7 +420,7 @@ exports.endpoints = [
         name: "get_varshphal_year_chart",
         method: "POST",
         path: "/varshphal_year_chart",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.varshphalDetailsSchema,
         description: "Execute varshphal_year_chart AstroChalit API"
     },
     {
@@ -448,7 +448,7 @@ exports.endpoints = [
         name: "get_varshphal_saham",
         method: "POST",
         path: "/varshphal_saham",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.varshphalDetailsSchema,
         description: "Execute varshphal_saham AstroChalit API"
     },
     {
@@ -497,7 +497,7 @@ exports.endpoints = [
         name: "get_calculate_planet_ingress",
         method: "POST",
         path: "/calculate_planet_ingress",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.calculatePlanetIngressSchema,
         description: "Execute calculate_planet_ingress AstroChalit API"
     },
     {

@@ -24,6 +24,7 @@ import {
   vimshottariSookshmaSchema,
   vimshottariPranaSchema,
   calculateEphemerisSchema,
+  calculatePlanetIngressSchema,
   planetaryPositionSchema,
   emptySchema
 } from './schemas';
@@ -446,7 +447,7 @@ export const endpoints = [
     name: "get_varshphal_year_chart",
     method: "POST",
     path: "/varshphal_year_chart",
-    schema: birthDetailsSchema,
+    schema: varshphalDetailsSchema,
     description: "Execute varshphal_year_chart AstroChalit API"
   },
   {
@@ -474,7 +475,7 @@ export const endpoints = [
     name: "get_varshphal_saham",
     method: "POST",
     path: "/varshphal_saham",
-    schema: birthDetailsSchema,
+    schema: varshphalDetailsSchema,
     description: "Execute varshphal_saham AstroChalit API"
   },
   {
@@ -523,7 +524,7 @@ export const endpoints = [
     name: "get_calculate_planet_ingress",
     method: "POST",
     path: "/calculate_planet_ingress",
-    schema: birthDetailsSchema,
+    schema: calculatePlanetIngressSchema,
     description: "Execute calculate_planet_ingress AstroChalit API"
   },
   {

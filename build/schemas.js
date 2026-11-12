@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.planetaryPositionSchema = exports.calculateEphemerisSchema = exports.vimshottariPranaSchema = exports.vimshottariSookshmaSchema = exports.vimshottariPratyantarSchema = exports.vimshottariAntarSchema = exports.charPratyantarDashaSchema = exports.charAntarDashaSchema = exports.bhinnaAshtakvargaSchema = exports.compatibilitySchema = exports.muhurtaSchema = exports.panchangSchema = exports.biorhythmSchema = exports.numerologySchema = exports.hinduFestivalsSchema = exports.moonPhasesSchema = exports.planetAspectsSchema = exports.planetIngressSchema = exports.searchPlaceSchema = exports.varshphalMuddaAntarSchema = exports.varshphalMonthSchema = exports.varshphalDetailsSchema = exports.balaSchema = exports.horoscopeSchema = exports.matchmakingSchema = exports.birthDetailsSchema = exports.emptySchema = void 0;
+exports.calculatePlanetIngressSchema = exports.planetaryPositionSchema = exports.calculateEphemerisSchema = exports.vimshottariPranaSchema = exports.vimshottariSookshmaSchema = exports.vimshottariPratyantarSchema = exports.vimshottariAntarSchema = exports.charPratyantarDashaSchema = exports.charAntarDashaSchema = exports.bhinnaAshtakvargaSchema = exports.compatibilitySchema = exports.muhurtaSchema = exports.panchangSchema = exports.biorhythmSchema = exports.numerologySchema = exports.hinduFestivalsSchema = exports.moonPhasesSchema = exports.planetAspectsSchema = exports.planetIngressSchema = exports.searchPlaceSchema = exports.varshphalMuddaAntarSchema = exports.varshphalMonthSchema = exports.varshphalDetailsSchema = exports.balaSchema = exports.horoscopeSchema = exports.matchmakingSchema = exports.birthDetailsSchema = exports.emptySchema = void 0;
 const zod_1 = require("zod");
 exports.emptySchema = {};
 exports.birthDetailsSchema = {
@@ -154,4 +154,15 @@ exports.planetaryPositionSchema = {
     name: zod_1.z.string().default("User").describe("Person's name"),
     gender: zod_1.z.enum(["Male", "Female", "Other"]).default("Male").describe("Gender of person"),
     place: zod_1.z.string().default("Delhi, India").describe("Birth place"),
+};
+exports.calculatePlanetIngressSchema = {
+    planet: zod_1.z.string().default("Sun").describe("Planet name (e.g. 'Sun', 'Moon', 'Mars')"),
+    startDate: zod_1.z.string().describe("Start date in YYYY-MM-DD format (e.g. '2024-01-01')"),
+    endDate: zod_1.z.string().describe("End date in YYYY-MM-DD format (e.g. '2024-12-31')"),
+    timezone: zod_1.z.string().default("Asia/Kolkata").describe("Timezone in IANA format (Default: 'Asia/Kolkata')"),
+    latitude: zod_1.z.number().default(28.6139).describe("Latitude in decimal degrees"),
+    longitude: zod_1.z.number().default(77.2090).describe("Longitude in decimal degrees"),
+    altitude: zod_1.z.number().default(0).describe("Altitude in meters"),
+    calculationMethod: zod_1.z.string().default("Moshier").describe("Calculation method (e.g. 'Moshier', 'Swiss')"),
+    zodiac: zod_1.z.string().default("Tropical").describe("Zodiac system (e.g. 'Tropical', 'Sidereal')"),
 };

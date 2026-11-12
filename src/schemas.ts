@@ -179,3 +179,15 @@ export const planetaryPositionSchema = {
   gender: z.enum(["Male", "Female", "Other"]).default("Male").describe("Gender of person"),
   place: z.string().default("Delhi, India").describe("Birth place"),
 };
+
+export const calculatePlanetIngressSchema = {
+  planet: z.string().default("Sun").describe("Planet name (e.g. 'Sun', 'Moon', 'Mars')"),
+  startDate: z.string().describe("Start date in YYYY-MM-DD format (e.g. '2024-01-01')"),
+  endDate: z.string().describe("End date in YYYY-MM-DD format (e.g. '2024-12-31')"),
+  timezone: z.string().default("Asia/Kolkata").describe("Timezone in IANA format (Default: 'Asia/Kolkata')"),
+  latitude: z.number().default(28.6139).describe("Latitude in decimal degrees"),
+  longitude: z.number().default(77.2090).describe("Longitude in decimal degrees"),
+  altitude: z.number().default(0).describe("Altitude in meters"),
+  calculationMethod: z.string().default("Moshier").describe("Calculation method (e.g. 'Moshier', 'Swiss')"),
+  zodiac: z.string().default("Tropical").describe("Zodiac system (e.g. 'Tropical', 'Sidereal')"),
+};
