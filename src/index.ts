@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+import process from "node:process";
+import { setInterval } from "node:timers";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import axios from "axios";

@@ -315,14 +315,14 @@ exports.endpoints = [
         name: "get_yogini_sub",
         method: "POST",
         path: "/yogini_sub",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.yoginiSchema,
         description: "Execute yogini_sub AstroChalit API"
     },
     {
         name: "get_yogini_maha",
         method: "POST",
         path: "/yogini_maha",
-        schema: schemas_1.birthDetailsSchema,
+        schema: schemas_1.yoginiSchema,
         description: "Execute yogini_maha AstroChalit API"
     },
     {

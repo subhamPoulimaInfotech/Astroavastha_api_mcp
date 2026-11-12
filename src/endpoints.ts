@@ -26,6 +26,7 @@ import {
   calculateEphemerisSchema,
   calculatePlanetIngressSchema,
   planetaryPositionSchema,
+  yoginiSchema,
   emptySchema
 } from './schemas';
 
@@ -342,14 +343,14 @@ export const endpoints = [
     name: "get_yogini_sub",
     method: "POST",
     path: "/yogini_sub",
-    schema: birthDetailsSchema,
+    schema: yoginiSchema,
     description: "Execute yogini_sub AstroChalit API"
   },
   {
     name: "get_yogini_maha",
     method: "POST",
     path: "/yogini_maha",
-    schema: birthDetailsSchema,
+    schema: yoginiSchema,
     description: "Execute yogini_maha AstroChalit API"
   },
   {

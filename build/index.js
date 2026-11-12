@@ -4,22 +4,24 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const node_process_1 = __importDefault(require("node:process"));
+const node_timers_1 = require("node:timers");
 const mcp_js_1 = require("@modelcontextprotocol/sdk/server/mcp.js");
 const stdio_js_1 = require("@modelcontextprotocol/sdk/server/stdio.js");
 const axios_1 = __importDefault(require("axios"));
 const endpoints_1 = require("./endpoints");
-const API_KEY = process.env.ASTROCHALIT_API_KEY;
+const API_KEY = node_process_1.default.env.ASTROCHALIT_API_KEY;
 if (!API_KEY) {
     console.error("ASTROCHALIT_API_KEY environment variable is required.");
-    process.exit(1);
+    node_process_1.default.exit(1);
 }
 const BASE_URL = "https://service.astrochalit.com/api";
-const IS_DEBUG = process.env.DEBUG === 'true';
+const IS_DEBUG = node_process_1.default.env.DEBUG === 'true';
 // Simple in-memory cache to prevent redundant API calls and save quota
 const cache = new Map();
 const CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour
 // Periodically clean up expired cache entries to prevent memory leaks
-setInterval(() => {
+(0, node_timers_1.setInterval)(() => {
     const now = Date.now();
     for (const [key, value] of cache.entries()) {
         if (now - value.timestamp > CACHE_TTL_MS) {

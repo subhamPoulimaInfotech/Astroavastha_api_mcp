@@ -143,6 +143,18 @@ export const charPratyantarDashaSchema = {
   antardasha_sign: z.string().describe("Sign name for Antardasha"),
 };
 
+export const yoginiSchema = {
+  day: z.number().int().min(1).max(31).describe("Day of birth (1-31)"),
+  month: z.number().int().min(1).max(12).describe("Month of birth (1-12)"),
+  year: z.number().int().describe("Year of birth (e.g. 1995)"),
+  hour: z.number().int().min(0).max(23).describe("Hour of birth (0-23)"),
+  minute: z.number().int().min(0).max(59).describe("Minute of birth (0-59)"),
+  second: z.number().int().min(0).max(59).describe("Second of birth (0-59)"),
+  latitude: z.number().optional().describe("Latitude of birth place (optional)"),
+  longitude: z.number().optional().describe("Longitude of birth place (optional)"),
+  timezone: z.string().optional().describe("Timezone (optional, default: Asia/Kolkata)")
+};
+
 export const vimshottariAntarSchema = {
   ...birthDetailsSchema,
   mahaDasha: z.string().describe("Planet name for Maha Dasha (e.g., Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury, Ketu, Venus)"),

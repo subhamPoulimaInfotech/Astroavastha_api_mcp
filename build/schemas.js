@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculatePlanetIngressSchema = exports.planetaryPositionSchema = exports.calculateEphemerisSchema = exports.vimshottariPranaSchema = exports.vimshottariSookshmaSchema = exports.vimshottariPratyantarSchema = exports.vimshottariAntarSchema = exports.charPratyantarDashaSchema = exports.charAntarDashaSchema = exports.bhinnaAshtakvargaSchema = exports.compatibilitySchema = exports.muhurtaSchema = exports.panchangSchema = exports.biorhythmSchema = exports.numerologySchema = exports.hinduFestivalsSchema = exports.moonPhasesSchema = exports.planetAspectsSchema = exports.planetIngressSchema = exports.searchPlaceSchema = exports.varshphalMuddaAntarSchema = exports.varshphalMonthSchema = exports.varshphalDetailsSchema = exports.balaSchema = exports.horoscopeSchema = exports.matchmakingSchema = exports.birthDetailsSchema = exports.emptySchema = void 0;
+exports.calculatePlanetIngressSchema = exports.planetaryPositionSchema = exports.calculateEphemerisSchema = exports.vimshottariPranaSchema = exports.vimshottariSookshmaSchema = exports.vimshottariPratyantarSchema = exports.vimshottariAntarSchema = exports.yoginiSchema = exports.charPratyantarDashaSchema = exports.charAntarDashaSchema = exports.bhinnaAshtakvargaSchema = exports.compatibilitySchema = exports.muhurtaSchema = exports.panchangSchema = exports.biorhythmSchema = exports.numerologySchema = exports.hinduFestivalsSchema = exports.moonPhasesSchema = exports.planetAspectsSchema = exports.planetIngressSchema = exports.searchPlaceSchema = exports.varshphalMuddaAntarSchema = exports.varshphalMonthSchema = exports.varshphalDetailsSchema = exports.balaSchema = exports.horoscopeSchema = exports.matchmakingSchema = exports.birthDetailsSchema = exports.emptySchema = void 0;
 const zod_1 = require("zod");
 exports.emptySchema = {};
 exports.birthDetailsSchema = {
@@ -123,6 +123,17 @@ exports.charPratyantarDashaSchema = {
     ...exports.birthDetailsSchema,
     mahadasha_sign: zod_1.z.string().describe("Sign name for Mahadasha"),
     antardasha_sign: zod_1.z.string().describe("Sign name for Antardasha"),
+};
+exports.yoginiSchema = {
+    day: zod_1.z.number().int().min(1).max(31).describe("Day of birth (1-31)"),
+    month: zod_1.z.number().int().min(1).max(12).describe("Month of birth (1-12)"),
+    year: zod_1.z.number().int().describe("Year of birth (e.g. 1995)"),
+    hour: zod_1.z.number().int().min(0).max(23).describe("Hour of birth (0-23)"),
+    minute: zod_1.z.number().int().min(0).max(59).describe("Minute of birth (0-59)"),
+    second: zod_1.z.number().int().min(0).max(59).describe("Second of birth (0-59)"),
+    latitude: zod_1.z.number().optional().describe("Latitude of birth place (optional)"),
+    longitude: zod_1.z.number().optional().describe("Longitude of birth place (optional)"),
+    timezone: zod_1.z.string().optional().describe("Timezone (optional, default: Asia/Kolkata)")
 };
 exports.vimshottariAntarSchema = {
     ...exports.birthDetailsSchema,
