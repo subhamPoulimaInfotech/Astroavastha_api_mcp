@@ -239,14 +239,14 @@ exports.endpoints = [
         method: "POST",
         path: "/bhinna_ashtakvarga",
         schema: schemas_1.bhinnaAshtakvargaSchema,
-        description: "Execute bhinnaAshtakVarga AstroChalit API"
+        description: "Calculate Bhinnashtak Varga (individual planetary score table across all 12 zodiac signs) for a specified planet based on birth details."
     },
     {
         name: "get_sarvashtakvarga",
         method: "POST",
         path: "/sarvashtakvarga",
         schema: schemas_1.birthDetailsSchema,
-        description: "Execute sarvashtakvarga AstroChalit API"
+        description: "Calculate Sarvashtak Varga (cumulative Ashtakvarga points across all zodiac signs and planets) based on birth details."
     },
     {
         name: "get_dashakoot",
@@ -421,7 +421,14 @@ exports.endpoints = [
         method: "POST",
         path: "/varshphal_year_chart",
         schema: schemas_1.varshphalDetailsSchema,
-        description: "Execute varshphal_year_chart AstroChalit API"
+        description: "Calculate Varshphal Year Chart (Solar Return annual horoscope) based on birth details and yearInput, returning solar_return, momentTime, and planetary positions."
+    },
+    {
+        name: "get_varshphal_planets",
+        method: "POST",
+        path: "/varshphal_planets",
+        schema: schemas_1.varshphalDetailsSchema,
+        description: "Calculate Varshphal planetary positions and details based on birth details and yearInput, returning solar_return, momentTime, and planetDetails."
     },
     {
         name: "get_varshphal_month_chart",

@@ -11,6 +11,7 @@ export const birthDetailsSchema = {
   second: z.number().int().min(0).max(59).describe("Second of birth (0-59)"),
   latitude: z.number().min(-90).max(90).describe("Latitude of birth place"),
   longitude: z.number().min(-180).max(180).describe("Longitude of birth place"),
+  timezone: z.string().optional().describe("Timezone of birth place (e.g. Asia/Kolkata). Defaults to Asia/Kolkata"),
 };
 
 export const matchmakingSchema = {
@@ -74,7 +75,7 @@ export const planetIngressSchema = {
 
 export const planetAspectsSchema = {
   month: z.number().int().min(1).max(12).describe("Month (1-12)"),
-  year: z.number().int().describe("Year (e.g. 2024 to 2040)"),
+  year: z.number().int().describe("Year (2024 to 2026 available)"),
 };
 
 export const moonPhasesSchema = {
@@ -94,7 +95,8 @@ export const numerologySchema = {
 };
 
 export const biorhythmSchema = {
-  dob: z.string().describe("Date of birth in YYYY-MM-DD format (e.g. 1995-05-15)"),
+  dob: z.string().optional().describe("Date of birth in YYYY-MM-DD format (e.g. 1995-05-15)"),
+  dateOfBirth: z.string().optional().describe("Alternative date of birth in YYYY-MM-DD format"),
 };
 
 export const panchangSchema = {
@@ -125,8 +127,9 @@ export const compatibilitySchema = {
 export const bhinnaAshtakvargaSchema = {
   ...birthDetailsSchema,
   planetInput: z.enum([
-    "Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Ascendant"
-  ]).default("Sun").describe("Planet name to calculate Bhinna Ashtakvarga points for"),
+    "Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn",
+    "sun", "moon", "mars", "mercury", "jupiter", "venus", "saturn"
+  ]).default("Sun").describe("Planet name to calculate Bhinna Ashtakvarga points for (Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn)"),
 };
 
 export const charAntarDashaSchema = {

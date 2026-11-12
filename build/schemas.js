@@ -12,6 +12,7 @@ exports.birthDetailsSchema = {
     second: zod_1.z.number().int().min(0).max(59).describe("Second of birth (0-59)"),
     latitude: zod_1.z.number().min(-90).max(90).describe("Latitude of birth place"),
     longitude: zod_1.z.number().min(-180).max(180).describe("Longitude of birth place"),
+    timezone: zod_1.z.string().optional().describe("Timezone of birth place (e.g. Asia/Kolkata). Defaults to Asia/Kolkata"),
 };
 exports.matchmakingSchema = {
     m_day: zod_1.z.number().int().min(1).max(31).describe("Male Day of birth"),
@@ -66,7 +67,7 @@ exports.planetIngressSchema = {
 };
 exports.planetAspectsSchema = {
     month: zod_1.z.number().int().min(1).max(12).describe("Month (1-12)"),
-    year: zod_1.z.number().int().describe("Year (e.g. 2024 to 2040)"),
+    year: zod_1.z.number().int().describe("Year (2024 to 2026 available)"),
 };
 exports.moonPhasesSchema = {
     selectedDate: zod_1.z.string().describe("Selected date in YYYY-MM-DD format (e.g. 2024-05-15)"),
@@ -82,7 +83,8 @@ exports.numerologySchema = {
     dateOfBirth: zod_1.z.string().describe("Date of birth in YYYY-MM-DD format (e.g. 1995-05-15)"),
 };
 exports.biorhythmSchema = {
-    dob: zod_1.z.string().describe("Date of birth in YYYY-MM-DD format (e.g. 1995-05-15)"),
+    dob: zod_1.z.string().optional().describe("Date of birth in YYYY-MM-DD format (e.g. 1995-05-15)"),
+    dateOfBirth: zod_1.z.string().optional().describe("Alternative date of birth in YYYY-MM-DD format"),
 };
 exports.panchangSchema = {
     date: zod_1.z.string().describe("Date in YYYY-MM-DD format (e.g. 2026-11-04)"),
@@ -109,8 +111,9 @@ exports.compatibilitySchema = {
 exports.bhinnaAshtakvargaSchema = {
     ...exports.birthDetailsSchema,
     planetInput: zod_1.z.enum([
-        "Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Ascendant"
-    ]).default("Sun").describe("Planet name to calculate Bhinna Ashtakvarga points for"),
+        "Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn",
+        "sun", "moon", "mars", "mercury", "jupiter", "venus", "saturn"
+    ]).default("Sun").describe("Planet name to calculate Bhinna Ashtakvarga points for (Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn)"),
 };
 exports.charAntarDashaSchema = {
     ...exports.birthDetailsSchema,
