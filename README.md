@@ -66,6 +66,7 @@ Once configured, simply talk to your assistant in natural language:
 
 - *"What is today's horoscope for Aries?"*
 - *"Calculate the Lagna and Navamsha chart for someone born on 15 August 1995 at 14:30 in New Delhi, India."*
+- *"Calculate the Sun chart (Surya Kundli) and Moon chart (Chandra Kundli) for birth details 15 August 1995 at 14:30 in New Delhi."*
 - *"Check marriage compatibility between a male born 12-05-1992 in Mumbai and a female born 24-08-1994 in Pune."*
 - *"What are the current Chaughadiya and Rahu Kaal timings for Delhi today?"*
 - *"Calculate the current Vimshottari Dasha period for my birth details."*
@@ -96,6 +97,8 @@ This MCP server provides comprehensive access across the full Vedic astrology sy
 - `get_divisional_chart_d9` (Navamsha - Marriage & Dharma)
 - `get_divisional_chart_d10` (Dashamsha - Career & Profession)
 - `get_divisional_chart_d12` through `get_divisional_chart_d60` (Shashtiamsha)
+- `get_sun_chart` (Surya Kundli / Sun as Ascendant - Soul, Vitality, Authority, Career)
+- `get_moon_chart` (Chandra Kundli / Moon as Ascendant - Mind, Emotions, Transit Gochar Reference)
 
 ### 4. Matchmaking & Compatibility (Kundli Milan)
 - `get_ashtakoot` - 36-point Guna Milan matching analysis.

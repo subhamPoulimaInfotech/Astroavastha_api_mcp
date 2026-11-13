@@ -568,14 +568,14 @@ exports.endpoints = [
         method: "POST",
         path: "/sun_chart",
         schema: schemas_1.birthDetailsSchema,
-        description: "Execute sun_chart AstroChalit API"
+        description: "Calculate Surya Kundli (Sun Chart) where the natal Sun is positioned in the 1st House (Ascendant), analyzing physical vitality, soul purpose, authority, and public status"
     },
     {
         name: "get_moon_chart",
         method: "POST",
         path: "/moon_chart",
         schema: schemas_1.birthDetailsSchema,
-        description: "Execute moon_chart AstroChalit API"
+        description: "Calculate Chandra Kundli (Moon Chart) where the natal Moon is positioned in the 1st House (Ascendant), analyzing mental peace, emotional stability, subconscious patterns, and Gochar transits"
     },
     {
         name: "get_searchplaceswithname",
