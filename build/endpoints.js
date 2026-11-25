@@ -6,147 +6,147 @@ exports.endpoints = [
     {
         name: "get_divisional_chart_d1",
         method: "POST",
-        path: "/divitionalcharts/d1",
+        path: "/divisionalcharts/d1",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d1chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d2",
         method: "POST",
-        path: "/divitionalcharts/d2",
+        path: "/divisionalcharts/d2",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d2chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d3",
         method: "POST",
-        path: "/divitionalcharts/d3",
+        path: "/divisionalcharts/d3",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d3chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d4",
         method: "POST",
-        path: "/divitionalcharts/d4",
+        path: "/divisionalcharts/d4",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d4chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d5",
         method: "POST",
-        path: "/divitionalcharts/d5",
+        path: "/divisionalcharts/d5",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d5chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d6",
         method: "POST",
-        path: "/divitionalcharts/d6",
+        path: "/divisionalcharts/d6",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d6chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d7",
         method: "POST",
-        path: "/divitionalcharts/d7",
+        path: "/divisionalcharts/d7",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d7chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d8",
         method: "POST",
-        path: "/divitionalcharts/d8",
+        path: "/divisionalcharts/d8",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d8chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d9",
         method: "POST",
-        path: "/divitionalcharts/d9",
+        path: "/divisionalcharts/d9",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d9chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d10",
         method: "POST",
-        path: "/divitionalcharts/d10",
+        path: "/divisionalcharts/d10",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d10chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d11",
         method: "POST",
-        path: "/divitionalcharts/d11",
+        path: "/divisionalcharts/d11",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d11chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d12",
         method: "POST",
-        path: "/divitionalcharts/d12",
+        path: "/divisionalcharts/d12",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d12chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d16",
         method: "POST",
-        path: "/divitionalcharts/d16",
+        path: "/divisionalcharts/d16",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d16chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d20",
         method: "POST",
-        path: "/divitionalcharts/d20",
+        path: "/divisionalcharts/d20",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d20chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d24",
         method: "POST",
-        path: "/divitionalcharts/d24",
+        path: "/divisionalcharts/d24",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d24chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d27",
         method: "POST",
-        path: "/divitionalcharts/d27",
+        path: "/divisionalcharts/d27",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d27chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d30",
         method: "POST",
-        path: "/divitionalcharts/d30",
+        path: "/divisionalcharts/d30",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d30chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d40",
         method: "POST",
-        path: "/divitionalcharts/d40",
+        path: "/divisionalcharts/d40",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d40chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d45",
         method: "POST",
-        path: "/divitionalcharts/d45",
+        path: "/divisionalcharts/d45",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d45chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d60",
         method: "POST",
-        path: "/divitionalcharts/d60",
+        path: "/divisionalcharts/d60",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d60chart AstroChalit API"
     },
     {
         name: "get_divisional_chart_d601",
         method: "POST",
-        path: "/divitionalcharts/d601",
+        path: "/divisionalcharts/d601",
         schema: schemas_1.birthDetailsSchema,
         description: "Execute d601chart AstroChalit API"
     },
